@@ -1,5 +1,6 @@
 ---
 theme: uncover
+marp: true
 ---
 # What a Git?
 
@@ -13,31 +14,51 @@ A crash course on Version Control Systems
 - Essential part of CI/CD pipelines
 
 ---
-## Using VCS for versioning your own work
+## Part 1: VCS for versioning your own work
 
 ---
-### States of a file under version control
+### Git file states
+![](file_states_git.jpeg)
+  
+---
+### Let's try it out!
+![w:500](live_demo.jpeg)
 
 ---
-## Using VCS for team collaboration
+## Part 2: VCS for team collaboration
 
-- Remote repositories
 - Working in parallel tracks(branching)
+- Remote repositories
 
 ---
 ### Remote repositories
 
 ---
-### Branching
+### Branching: how does commit log look like
 
 ---
-### Pull requests
+### Branching: creating a new branch
+
+---
+### Branching: a very simple parallel track workflow
+
+---
+### Pull requests: creating a PR
+
+---
+### Pull requests: writing a good PR description
+
+---
+### Pull requests: reviewing and merging a PR
+
+---
+### Pull requests: merge vs squash-merge
 
 ---
 ### Solving merge conflicts
 
 ---
-### A (somewhat) successfull branching model
+### A more complex branching model
 
 ---
 ## Practical tips and tricks
@@ -47,3 +68,12 @@ A crash course on Version Control Systems
 - Bisecting
 
 ---
+## Sources
+These slides use images and information from following sources
+
+- https://lynn-kwong.medium.com/understand-different-git-states-and-the-corresponding-file-states-fc62348e81d7
+- https://www.atlassian.com/git/tutorials/using-branches
+- https://gitbookdown.dallasdatascience.com/branching-git-branch.html
+- https://myst729.github.io/posts/2019/on-merging-pull-requests/
+
+___
