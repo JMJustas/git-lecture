@@ -31,35 +31,73 @@ A crash course on Version Control Systems
 - Remote repositories
 
 ---
-### Remote repositories
-
----
-### Branching: how does commit log look like
+### Branching: commit log
+![](basic_commit_history.svg)
+```sh
+git log --graph --oneline
+```
 
 ---
 ### Branching: creating a new branch
+![](creating_a_branch.svg)
+```sh
+git branch crazy-experiment
+git checkout -b crazy-experiment
+```
 
 ---
-### Branching: a very simple parallel track workflow
+### Branching: a simple parallel track workflow
+![w:800](basic_branching.png)
+```sh
+git checkout -b new_feature
+git commit -am "Restructure login controller"
+git commit -am "Add rate limiting for password reset function"
+git checkout master 
+git merge new_feature # normally done through a PR
+```
 
 ---
-### Pull requests: creating a PR
+### Working with remote repositories
+```sh
+git remote add origin # connect your local git repo to a remote one
+git clone # "download" repository contents for the first time
+git pull # fetch latest changes from remote repository
+git push # upload changes on your current branch to a remote repo
+```
+---
+### Pull requests: purpose
+
+- Ensuring code quality
+- Sharing knowledge between team members
 
 ---
-### Pull requests: writing a good PR description
+## Pull requests: creating a PR
+- Limit the scope:
+    - Avoid redundant style changes
+    - Solve one problem per PR only
+- Write a clear PR description (VERY important!):
+    - Describe the reason for the PR
+    - Describe your solution
+    - Describe any gotchas/quirks you've encountered when working
+    - Include link to your issue tracker
+- 
 
 ---
-### Pull requests: reviewing and merging a PR
+## Pull requests: reviewing a PR
+- Read description and intention of the PR thoroughly.
+- Be polite with your feedback.
+- Be pragmatic - don't argue about minor things.
+- PRO tip: be sure to include PR description to the merge commit ;)
 
 ---
-### Pull requests: merge vs squash-merge
+## Pull requests: merge vs squash-merge
 
 ---
-### Solving merge conflicts
+## Solving merge conflicts
 
 ---
-### A more complex branching model
-
+## A more complex branching model
+![w:800](basic_branching.png)
 ---
 ## Practical tips and tricks
 - Annotation
@@ -69,11 +107,9 @@ A crash course on Version Control Systems
 
 ---
 ## Sources
-These slides use images and information from following sources
+Some images and information are taken from following sources:
 
 - https://lynn-kwong.medium.com/understand-different-git-states-and-the-corresponding-file-states-fc62348e81d7
 - https://www.atlassian.com/git/tutorials/using-branches
 - https://gitbookdown.dallasdatascience.com/branching-git-branch.html
 - https://myst729.github.io/posts/2019/on-merging-pull-requests/
-
-___
