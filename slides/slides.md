@@ -98,11 +98,13 @@ git merge new_feature # normally done through a PR
 
 ---
 ## Pull requests: description
-- **WHY**: Describe the intent of the PR
-- **HOW**: Describe your solution
-- Describe any gotchas/quirks you've encountered when working
-- Include a link to your issue tracker(e.g. JIRA)
-- **Issue/Cause/Solution** is also a nice structure for bugfix PRs
+- Recommended pattern:
+    - **WHY**: Describe the intent of the PR
+    - **HOW**: Describe your solution
+    - Describe any gotchas/quirks you've encountered when working
+    - Include a link to your issue tracker(e.g. JIRA)
+- **Issue/Cause/Solution** pattern works nice for bugfix PRs
+- If there are any questions from reviewers - the PR description needs to be updated
 ---
 ## Pull requests: reviewing a PR
 - Read description and intention of the PR thoroughly.
