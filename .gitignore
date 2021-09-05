@@ -1,2 +1,5 @@
-*.html
+slides/*.html
 .DS_Store
+code_examples/**/bin/
+code_examples/**/obj/
+.idea
