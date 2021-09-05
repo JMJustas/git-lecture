@@ -1,5 +1,6 @@
 ---
 theme: gaia
+marp: false
 ---
 # What a Git?
 
@@ -19,7 +20,7 @@ A crash course on Version Control Systems
 `git init` 😉
 
 ---
-### Git file states
+## Git file states
 ![](file_states_git.jpeg)
 
 ---
@@ -29,19 +30,18 @@ A crash course on Version Control Systems
 - Can contain multiple files
     - `git add filename` OR `git add src/` OR `git add .`
 - Has a message describing the changes
-    - `git add && git commit`
     - `git commit -am "Fix the login issue"`
 
 ---
 ## Pay attention to the commit message!
 - Keep the style consistent - read the commit log
 - Provide description about the change - you will thank yourself in the future!
-    - [How to write a good Git commit message](https://chris.beams.io/posts/git-commit)
+- [How to write a good Git commit message](https://chris.beams.io/posts/git-commit)
 
 ![w:800](commit_message.png)
   
 ---
-### Let's try Git live!
+## Let's try Git live!
 ![w:800](live_demo.gif)
 
 ---
@@ -63,14 +63,14 @@ A crash course on Version Control Systems
 
 
 ---
-### Branching: commit log
+## Branching: commit log
 ![](basic_commit_history.svg)
 ```sh
 git log --graph --oneline
 ```
 
 ---
-### Branching: creating a new branch
+## Branching: creating a new branch
 ![](creating_a_branch.svg)
 ```sh
 git branch crazy-experiment
@@ -78,7 +78,7 @@ git checkout -b crazy-experiment
 ```
 
 ---
-### Branching: a simple parallel track workflow
+## Branching: a simple parallel track workflow
 ![w:800](basic_branching.png)
 ```sh
 git checkout -b new_feature
