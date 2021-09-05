@@ -26,11 +26,12 @@ A crash course on Version Control Systems
 ---
 
 ## Git commit
-- Represents a single change to a project
-- Can contain multiple files
-    - `git add filename` OR `git add src/` OR `git add .`
-- Has a message describing the changes
-    - `git commit -am "Fix the login issue"`
+- Represents a change to a project
+- Can contain multiple files(e.g. `git add src/`)
+- Has a message describing the changes (e.g. `git commit -am "Fix the login issue"`)
+- Has a commit hash
+- Has a pointer to a parent commit
+![w:800](basic_commit_history.svg)
 
 ---
 ## Pay attention to the commit message!
@@ -61,13 +62,6 @@ A crash course on Version Control Systems
 5. [Clone a repository to your local machine](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 6. Start working!
 
-
----
-## Branching: commit log
-![](basic_commit_history.svg)
-```sh
-git log --graph --oneline
-```
 
 ---
 ## Branching: creating a new branch
