@@ -1,6 +1,5 @@
 ---
-theme: uncover
-marp: true
+theme: gaia
 ---
 # What a Git?
 
@@ -25,17 +24,21 @@ A crash course on Version Control Systems
 
 ---
 
-### Git commit
-- Represents a change to a project
-- Can contain multiple files:
-    - `git add filename`
-    - `git add src/`
-    - `git add .`
+## Git commit
+- Represents a single change to a project
+- Can contain multiple files
+    - `git add filename` OR `git add src/` OR `git add .`
 - Has a message describing the changes
     - `git add && git commit`
     - `git commit -am "Fix the login issue"`
+
+---
+## Pay attention to the commit message!
+- Keep the style consistent - read the commit log
+- Provide description about the change - you will thank yourself in the future!
     - [How to write a good Git commit message](https://chris.beams.io/posts/git-commit)
 
+![w:800](commit_message.png)
   
 ---
 ### Let's try Git live!
