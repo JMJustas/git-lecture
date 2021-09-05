@@ -119,7 +119,7 @@ git merge new_feature # normally done through a PR
 
 ---
 ## Solving merge conflicts
-- Checkout the feature branch locally (`git checkout feature && git pull`)
+- Checkout the feature branch (`git checkout feat && git pull`)
 - Merge changes from **main** into the feature branch manually: [merge vs rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 - Fix all the conflicts in your code editor and `git commit` them
 - `git push` your changes back to the remote repo (you will need to `--force` push in case of rebase!) 
