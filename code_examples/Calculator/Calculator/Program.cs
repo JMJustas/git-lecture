@@ -24,6 +24,9 @@ namespace Calculator
                 case "+":
                     result = calculator.Add(arg1, arg2);
                     break;
+                case "-":
+                    result = calculator.Subtract(arg1, arg2);
+                    break;
                 case "*":
                     result = calculator.Multiply(arg1, arg2);
                     break;
