@@ -17,6 +17,18 @@ namespace Calculator.Tests
         }
 
         [Theory]
+        [InlineData(2, 1, 1)]
+        [InlineData(1, 1, 0)]
+        [InlineData(-2, -1, -1)]
+        public void TestSubtract(int arg1, int arg2, int expectedResult)
+        {
+            var calculator = new Calculator();
+            var result = calculator.Subtract(arg1, arg2);
+
+            Assert.Equal(expectedResult, result);
+        }
+
+        [Theory]
         [InlineData(1, 2, 2)]
         [InlineData(1, 1, 1)]
         [InlineData(10, 10, 100)]
